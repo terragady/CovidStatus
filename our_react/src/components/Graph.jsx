@@ -23,11 +23,11 @@ export default function Graph(props) {
 
       ]}
       layout={{
-        width: 1920,
-        height: 1080,
+        width: 1000,
+        height: 500,
         plot_bgcolor: 'rgb(245, 245, 245)',
         paper_bgcolor: 'rgb(245, 245, 245)',
-        titlefont: {size: 32},
+        titlefont: {size: 24},
         xaxis: {
           title: { text: 'Date' },
           showgrid: false,
