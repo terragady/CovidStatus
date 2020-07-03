@@ -5,10 +5,11 @@ import Board from './components/Board';
 
 function App() {
   return (
-    <div>
+    <main className="App">
+      <h1 className="App__header">Covid-19 fatal cases over time</h1>
       <GlobalCard />
       <Board />
-    </div>
+    </main>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/CountryForm.css'
 
 export default class Board extends Component {
   constructor(props) {
@@ -29,8 +30,8 @@ export default class Board extends Component {
   render() {
     const { countries } = this.state;
     return (
-      <section className="Board">
-        <select onChange={this.props.func} id="cars" name="cars">
+      <section>
+        <select className="CountryForm__dropdown" onChange={this.props.func} id="cars" name="cars">
           {countries.map((e, i) => <option key={i} value={`${e.slug}@${e.country}`}>{e.country}</option>)}
         </select>
       </section>

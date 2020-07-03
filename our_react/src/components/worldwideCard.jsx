@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/GlobalCard.css';
 
 class GlobalCard extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class GlobalCard extends Component {
   render() {
     const { data } = this.state;
     return (
-      <div className="summary-card">
+      <div className="GlobalCard">
         <h1>Global Summary</h1>
         <p>
           <strong>Total Confirmed: </strong>

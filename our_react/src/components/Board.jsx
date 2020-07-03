@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Graph from './Graph';
 import CountryForm from './CountryForm';
+import './styles/Board.css'
 
 export default class Board extends Component {
   constructor() {
@@ -42,12 +43,12 @@ export default class Board extends Component {
     const { data, countryName } = this.state;
     return (
       <section className="Board">
+      <CountryForm func={this.updateGraph} />
         {
           data === null
             ? <h3>Loading...</h3>
             : <Graph data={data} country={countryName} />
         }
-        <CountryForm func={this.updateGraph} />
       </section>
 
     );

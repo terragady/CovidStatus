@@ -23,17 +23,20 @@ export default function Graph(props) {
 
       ]}
       layout={{
-        width: 1000,
-        height: 700,
+        width: 1920,
+        height: 1080,
         plot_bgcolor: 'rgb(245, 245, 245)',
         paper_bgcolor: 'rgb(245, 245, 245)',
+        titlefont: {size: 32},
         xaxis: {
           title: { text: 'Date' },
           showgrid: false,
+          titlefont: {size: 18},
         },
         yaxis: {
           title: { text: 'Number of deaths' },
           showgrid: false,
+          titlefont: {size: 18},
         },
         title: `Deaths in ${country} from February to present (weekly interval)`,
       }}
