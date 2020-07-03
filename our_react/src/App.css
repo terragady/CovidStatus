@@ -7,5 +7,7 @@ font-size: 24px;
 }
 
 .App__header {
-  font-size: 56px;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
